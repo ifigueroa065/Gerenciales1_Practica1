@@ -26,6 +26,8 @@ El modelo relacional está compuesto por **tres tablas principales**:
 - **Clave primaria:** `id_uso`
 - **Claves foráneas:** `id_lenguaje`, `id_periodo`
 
+![](https://github.com/ifigueroa065/G1_Practica1_16/blob/main/modelo_relacional.png)
+
 **🔹 Razón para esta estructura:**
 
 - Permite normalización y evita redundancia de datos.
