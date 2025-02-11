@@ -152,14 +152,14 @@ GROUP BY L.nombre
 ORDER BY total_uso ASC;
 ```
 
-### 🔹 **Top 5 Lenguajes Más Activos en Q4 2022**
+### 🔹 **Top 5 Lenguajes Más Activos en Trimestre 1 del 2022**
 
 ```sql
 SELECT TOP 5 L.nombre, SUM(U.conteo) AS total_uso
 FROM Uso_Lenguaje U
 JOIN Lenguajes L ON U.id_lenguaje = L.id_lenguaje
 JOIN Periodo P ON U.id_periodo = P.id_periodo
-WHERE P.año = 2022 AND P.trimestre = 4
+WHERE P.año = 2022 AND P.trimestre = 1
 GROUP BY L.nombre
 ORDER BY total_uso DESC;
 ```
