@@ -47,10 +47,10 @@ CREATE TABLE #TempLenguajes (
 --  CARGAR LOS DATOS DESDE CSV CON BULK INSERT
 -- ==========================
 BULK INSERT #TempLenguajes
-FROM 'C:\Temp\issues.csv'  -- Asegúrate de que el archivo está en esta ruta
+FROM 'C:\Temp\issues.csv'  
 WITH (
     FIELDTERMINATOR = ',',
-    ROWTERMINATOR = '0x0A',  -- Código hexadecimal para salto de línea \n
+    ROWTERMINATOR = '0x0A', 
     FIRSTROW = 2
 );
 
